@@ -1,0 +1,231 @@
+@import "globals/shared";
+
+.controls {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1094px;
+}
+
+.control-block {
+    float: none;
+    width: 125px;
+    margin-left: 50px;
+    margin-top: 50px;
+    align: center;
+    text-align: center;
+    display: inline-block;
+    vertical-align:top;
+    clear: left;
+
+    &.active {
+        .icon-container {
+            background-color: rgba(255,255,255,.5);
+        }
+
+        h3 {
+            color: #dad9d7;
+        }
+    }
+}
+
+.control-block:nth-child(2n+1) {
+    margin-left: 87px;
+}
+
+.control-block:first-child {
+    margin-left: 0;
+}
+
+.control-block:nth-child(6n+1) {
+    margin-left: 0;
+}
+
+.control-block:nth-child(6n) {
+    &:after {
+        content: '';
+        display: block;
+    }
+}
+
+/*
+
+
+
+        I C O N S
+
+
+
+*/
+
+.icon-lights-off {
+    padding-top: 26px;
+
+    .icon {
+        width: 34px;
+        height: 49px;
+        background-image: url('../img/icons/v3/icon-lights-off.svg');
+
+        .active & {
+            background-image: url('../img/icons/v3/icon-lights-off-active.svg')
+        }
+    }
+}
+
+.icon-bathroom-off {
+    padding-top: 22px;
+
+    .icon {
+        width: 58px;
+        height: 64px;
+        background-image: url('../img/icons/v3/icon-bathroom-off.svg');
+
+        .active & {
+            background-image: url('../img/icons/v3/icon-bathroom-off-active.svg')
+        }
+    }
+}
+
+.icon-blinds-closed {
+    padding-top: 23px;
+
+    .icon {
+        width: 58px;
+        height: 56px;
+        background-image: url('../img/icons/v3/icon-blinds-closed.svg');
+
+        .active & {
+            background-image: url('../img/icons/v3/icon-blinds-closed-active.svg')
+        }
+    }
+}
+
+.icon-d-n-d-off {
+    padding-top: 23px;
+
+    .icon {
+        width: 29px;
+        height: 56px;
+        background-image: url('../img/icons/v3/icon-d-n-d-off.svg');
+
+        .active & {
+            background-image: url('../img/icons/v3/icon-d-n-d-off-active.svg')
+        }
+    }
+}
+
+.icon-make-up-room-off {
+    padding-top: 21px;
+
+    .icon {
+        width: 46px;
+        height: 60px;
+        background-image: url('../img/icons/v3/icon-make-up-room-off.svg');
+
+        .active & {
+            background-image: url('../img/icons/v3/icon-make-up-room-off-active.svg')
+        }
+    }
+}
+
+.icon-curtains-open {
+    padding-top: 28px;
+
+    .icon {
+        width: 54px;
+        height:44px;
+        background-image: url('../img/icons/v3/icon-curtains-open.svg');
+
+        .active & {
+            background-image: url('../img/icons/v3/icon-curtains-open-active.svg')
+        }
+    }
+}
+
+.icon-curtains-closed {
+    padding-top: 28px;
+
+    .icon {
+        width: 54px;
+        height:44px;
+        background-image: url('../img/icons/v3/icon-curtains-closed.svg');
+
+        .active & {
+            background-image: url('../img/icons/v3/icon-curtains-closed-active.svg')
+        }
+    }
+}
+
+/*
+
+
+
+        RESPONSIVE
+
+
+
+*/
+
+@media (max-width : 1250px) {
+    .controls {
+        max-width: 670px;
+    }
+
+    .control-block {
+        float: none;
+        width: 125px;
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+
+    .control-block:nth-child(2n+1) {
+        margin-left: 87px;
+    }
+
+    .control-block:first-child {
+        margin-left: 0;
+    }
+
+    .control-block:nth-child(4n+1) {
+        margin-left: 0;
+    }
+
+    .control-block:nth-child(4n) {
+        &:after {
+            content: '';
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width : 768px) {
+    .controls {
+        max-width: 340px;
+    }
+
+    .control-block {
+        float: none;
+        width: 125px;
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+
+    .control-block:nth-child(2n+1) {
+        margin-left:0px;
+    }
+
+    .control-block:first-child {
+        margin-left: 0;
+    }
+
+    .control-block:nth-child(2n+1) {
+        margin-left: 0;
+    }
+
+    .control-block:nth-child(2n) {
+        &:after {
+            content: '';
+            display: block;
+        }
+    }
+}

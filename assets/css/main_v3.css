@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'Plantin';
+  src: url("../fonts/plantin.woff") format("woff"), url("../fonts/plantin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Plantin';
+  src: url("../fonts/plantin-italic.woff") format("woff"), url("../fonts/plantin-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Knockout';
+  src: url("../fonts/knockout.woff") format("woff"), url("../fonts/knockout.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+body {
+  background: transparent; }
+
+.b-static-background {
+  z-index: 0;
+  position: absolute;
+  top: -63px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: auto;
+  background-image: url("../img/main_bg.jpg"); }
+
+h2 {
+  text-align: center;
+  font-family: 'Plantin';
+  font-size: 30px;
+  color: #dad9d7;
+  font-weight: 400; }
+
+h3 {
+  text-align: center;
+  color: #976e3d;
+  font-family: Knockout, helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 30px; }
+
+.container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  overflow: hidden; }
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.icon-container:hover {
+  cursor: pointer; }
+
+.icon-lights {
+  padding-top: 16px; }
+  .icon-lights .icon {
+    width: 54px;
+    height: 61px;
+    background-image: url("../img/icons/icon-lights.svg"); }
+    .active .icon-lights .icon {
+      background-image: url("../img/icons/icon-lights-active.svg"); }
+
+.icon-bathroom-lights {
+  padding-top: 18px; }
+  .icon-bathroom-lights .icon {
+    width: 56px;
+    height: 66px;
+    background-image: url("../img/icons/icon-bathroom.svg"); }
+    .active .icon-bathroom-lights .icon {
+      background-image: url("../img/icons/icon-bathroom-active.svg"); }
+
+.icon-blinds {
+  padding-top: 23px; }
+  .icon-blinds .icon {
+    width: 57px;
+    height: 54px;
+    background-image: url("../img/icons/icon-blinds.svg"); }
+    .active .icon-blinds .icon {
+      background-image: url("../img/icons/icon-blinds-active.svg"); }
+
+.icon-d-n-d {
+  padding-top: 23px; }
+  .icon-d-n-d .icon {
+    width: 27px;
+    height: 54px;
+    background-image: url("../img/icons/icon-d-n-d.svg"); }
+    .active .icon-d-n-d .icon {
+      background-image: url("../img/icons/icon-d-n-d-active.svg"); }
+
+.icon-make-up-room {
+  padding-top: 21px; }
+  .icon-make-up-room .icon {
+    width: 44px;
+    height: 58px;
+    background-image: url("../img/icons/icon-make-up-room.svg"); }
+    .active .icon-make-up-room .icon {
+      background-image: url("../img/icons/icon-make-up-room-active.svg"); }
+
+.icon-curtains {
+  padding-top: 28px; }
+  .icon-curtains .icon {
+    width: 53px;
+    height: 42px;
+    background-image: url("../img/icons/icon-curtains.svg"); }
+    .active .icon-curtains .icon {
+      background-image: url("../img/icons/icon-curtains-active.svg"); }
+
+.icon {
+  color: #976e3d;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; }
+
+.controls {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1094px; }
+
+.control-block {
+  float: none;
+  width: 125px;
+  margin-left: 50px;
+  margin-top: 50px;
+  align: center;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  clear: left; }
+  .control-block.active .icon-container {
+    background-color: rgba(255, 255, 255, 0.5); }
+  .control-block.active h3 {
+    color: #dad9d7; }
+
+.control-block:nth-child(2n+1) {
+  margin-left: 87px; }
+
+.control-block:first-child {
+  margin-left: 0; }
+
+.control-block:nth-child(6n+1) {
+  margin-left: 0; }
+
+.control-block:nth-child(6n):after {
+  content: '';
+  display: block; }
+
+/*
+
+
+
+        I C O N S
+
+
+
+*/
+.icon-lights-off {
+  padding-top: 26px; }
+  .icon-lights-off .icon {
+    width: 34px;
+    height: 49px;
+    background-image: url("../img/icons/v3/icon-lights-off.svg"); }
+    .active .icon-lights-off .icon {
+      background-image: url("../img/icons/v3/icon-lights-off-active.svg"); }
+
+.icon-bathroom-off {
+  padding-top: 22px; }
+  .icon-bathroom-off .icon {
+    width: 58px;
+    height: 64px;
+    background-image: url("../img/icons/v3/icon-bathroom-off.svg"); }
+    .active .icon-bathroom-off .icon {
+      background-image: url("../img/icons/v3/icon-bathroom-off-active.svg"); }
+
+.icon-blinds-closed {
+  padding-top: 23px; }
+  .icon-blinds-closed .icon {
+    width: 58px;
+    height: 56px;
+    background-image: url("../img/icons/v3/icon-blinds-closed.svg"); }
+    .active .icon-blinds-closed .icon {
+      background-image: url("../img/icons/v3/icon-blinds-closed-active.svg"); }
+
+.icon-d-n-d-off {
+  padding-top: 23px; }
+  .icon-d-n-d-off .icon {
+    width: 29px;
+    height: 56px;
+    background-image: url("../img/icons/v3/icon-d-n-d-off.svg"); }
+    .active .icon-d-n-d-off .icon {
+      background-image: url("../img/icons/v3/icon-d-n-d-off-active.svg"); }
+
+.icon-make-up-room-off {
+  padding-top: 21px; }
+  .icon-make-up-room-off .icon {
+    width: 46px;
+    height: 60px;
+    background-image: url("../img/icons/v3/icon-make-up-room-off.svg"); }
+    .active .icon-make-up-room-off .icon {
+      background-image: url("../img/icons/v3/icon-make-up-room-off-active.svg"); }
+
+.icon-curtains-open {
+  padding-top: 28px; }
+  .icon-curtains-open .icon {
+    width: 54px;
+    height: 44px;
+    background-image: url("../img/icons/v3/icon-curtains-open.svg"); }
+    .active .icon-curtains-open .icon {
+      background-image: url("../img/icons/v3/icon-curtains-open-active.svg"); }
+
+.icon-curtains-closed {
+  padding-top: 28px; }
+  .icon-curtains-closed .icon {
+    width: 54px;
+    height: 44px;
+    background-image: url("../img/icons/v3/icon-curtains-closed.svg"); }
+    .active .icon-curtains-closed .icon {
+      background-image: url("../img/icons/v3/icon-curtains-closed-active.svg"); }
+
+/*
+
+
+
+        RESPONSIVE
+
+
+
+*/
+@media (max-width: 1250px) {
+  .controls {
+    max-width: 670px; }
+
+  .control-block {
+    float: none;
+    width: 125px;
+    margin-left: 35px;
+    margin-top: 50px; }
+
+  .control-block:nth-child(2n+1) {
+    margin-left: 87px; }
+
+  .control-block:first-child {
+    margin-left: 0; }
+
+  .control-block:nth-child(4n+1) {
+    margin-left: 0; }
+
+  .control-block:nth-child(4n):after {
+    content: '';
+    display: block; } }
+@media (max-width: 768px) {
+  .controls {
+    max-width: 340px; }
+
+  .control-block {
+    float: none;
+    width: 125px;
+    margin-left: 50px;
+    margin-top: 60px; }
+
+  .control-block:nth-child(2n+1) {
+    margin-left: 0px; }
+
+  .control-block:first-child {
+    margin-left: 0; }
+
+  .control-block:nth-child(2n+1) {
+    margin-left: 0; }
+
+  .control-block:nth-child(2n):after {
+    content: '';
+    display: block; } }

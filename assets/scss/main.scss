@@ -1,0 +1,83 @@
+@import "globals/shared";
+
+.controls {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.control-block {
+    float: left;
+    width: 125px;
+    margin-left: 86px;
+    margin-top: 50px;
+
+    &.active {
+        .icon-container {
+            background-color: rgba(255,255,255,.5);
+        }
+
+        h3 {
+            color: #dad9d7;
+        }
+    }
+}
+
+.control-block:nth-child(3n+1) {
+    clear: both;
+    margin-left: 0;
+}
+
+
+
+@media (max-width : 768px) {
+
+    .control-block {
+        width: 125px;
+        margin-left: 86px;
+        margin-top: 40px;
+    }
+
+    .control-block:nth-child(3n+1) {
+        clear: none;
+        margin-left: 86px;
+    }
+
+    .control-block:nth-child(2n+1) {
+        clear: both;
+        margin-left: 0;
+    }
+
+    .controls {
+        width: 336px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width : 376px) {
+    h2 {
+        margin-bottom: 0;
+    }
+    .control-block {
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .control-block:nth-child(3n+1) {
+        clear: none;
+        margin-left: 25px;
+    }
+
+    .control-block:nth-child(2n+1) {
+        clear: both;
+        margin-left: 0;
+    }
+
+    .controls {
+        width: 275px;
+        margin: 0 auto;
+    }
+
+    .icon-container {
+        transform: scale(.8)
+    }
+}

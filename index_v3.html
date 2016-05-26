@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title>Paramount Room Controls</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/main_v3.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="b-static-background"></div>
+        <div class="container">
+            <h2>
+                Room Controls
+            </h2>
+            <div class="controls">
+                <div class="control-block">
+                    <div class="icon-container icon-lights">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        All<br />Lights On
+                    </h3>
+                </div>
+                <div class="control-block">
+                    <div class="icon-container icon-lights-off">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        All<br />Lights Off
+                    </h3>
+                </div>
+
+                <div class="control-block">
+                    <div class="icon-container icon-bathroom-lights">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Bathroom<br />Light On
+                    </h3>
+                </div>
+                <div class="control-block">
+                    <div class="icon-container icon-bathroom-off">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Bathroom<br />Light Off
+                    </h3>
+                </div>
+
+                <div class="control-block">
+                    <div class="icon-container icon-blinds">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Blinds Open
+                    </h3>
+                </div>
+                <div class="control-block">
+                    <div class="icon-container icon-blinds-closed">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Blinds Closed
+                    </h3>
+                </div>
+
+                <div class="control-block">
+                    <div class="icon-container icon-d-n-d">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Do Not<br />Disturb On
+                    </h3>
+                </div>
+                <div class="control-block">
+                    <div class="icon-container icon-d-n-d-off">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Do Not<br />Disturb Off
+                    </h3>
+                </div>
+
+                <div class="control-block">
+                    <div class="icon-container icon-make-up-room">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Make Up My<br />Room On
+                    </h3>
+                </div>
+                <div class="control-block">
+                    <div class="icon-container icon-make-up-room-off">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Make Up My<br />Room Off
+                    </h3>
+                </div>
+
+                <div class="control-block">
+                    <div class="icon-container icon-curtains-open">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Curtains Open
+                    </h3>
+                </div>
+                <div class="control-block">
+                    <div class="icon-container icon-curtains-closed">
+                        <span class="icon"></span>
+                    </div>
+                    <h3>
+                        Curtains Closed
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $('.control-block').on('click', function() {
+                $(this).toggleClass('active')
+            })
+        </script>
+    </body>
+</html>

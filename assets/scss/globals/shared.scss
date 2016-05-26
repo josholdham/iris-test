@@ -1,0 +1,176 @@
+$primary : #976e3d;
+
+@font-face {
+  font-family: 'Plantin';
+  src: url('../fonts/plantin.woff') format('woff'),
+  url('../fonts/plantin.ttf') format('truetype');
+  font-weight: normal;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'Plantin';
+  src: url('../fonts/plantin-italic.woff') format('woff'),
+  url('../fonts/plantin-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('../fonts/knockout.woff') format('woff'),
+  url('../fonts/knockout.ttf') format('truetype');
+  font-weight: 400;
+  font-style:  normal;
+}
+
+body {
+    background: transparent;
+}
+
+
+.b-static-background {
+    z-index: 0;
+    position: absolute;
+    top: -63px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
+    background-image: url('../img/main_bg.jpg');
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Plantin';
+    font-size: 30px;
+    color: #dad9d7;
+    font-weight: 400;
+}
+
+h3 {
+    text-align: center;
+    color: $primary;
+    font-family: Knockout, helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,.5);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.icon-container:hover {
+    cursor: pointer;
+}
+
+
+.icon-lights {
+    padding-top: 16px;
+
+    .icon {
+        width: 54px;
+        height: 61px;
+        background-image: url('../img/icons/icon-lights.svg');
+
+        .active & {
+            background-image: url('../img/icons/icon-lights-active.svg')
+        }
+    }
+}
+
+.icon-bathroom-lights {
+    padding-top: 18px;
+
+    .icon {        
+        width: 56px;
+        height: 66px;
+        background-image: url('../img/icons/icon-bathroom.svg');
+
+        .active & {
+            background-image: url('../img/icons/icon-bathroom-active.svg')
+        }
+    }
+}
+
+.icon-blinds {
+    padding-top: 23px;
+
+    .icon {        
+        width: 57px;
+        height: 54px;
+        background-image: url('../img/icons/icon-blinds.svg');
+
+        .active & {
+            background-image: url('../img/icons/icon-blinds-active.svg')
+        }
+    }
+}
+
+.icon-d-n-d {
+    padding-top: 23px;
+
+    .icon {        
+        width: 27px;
+        height: 54px;
+        background-image: url('../img/icons/icon-d-n-d.svg');
+
+        .active & {
+            background-image: url('../img/icons/icon-d-n-d-active.svg')
+        }
+    }
+}
+
+.icon-make-up-room {
+    padding-top: 21px;
+
+    .icon {        
+        width: 44px;
+        height: 58px;
+        background-image: url('../img/icons/icon-make-up-room.svg');
+
+        .active & {
+            background-image: url('../img/icons/icon-make-up-room-active.svg')
+        }
+    }
+}
+
+.icon-curtains {
+    padding-top: 28px;
+
+    .icon {        
+        width: 53px;
+        height: 42px;
+        background-image: url('../img/icons/icon-curtains.svg');
+
+        .active & {
+            background-image: url('../img/icons/icon-curtains-active.svg')
+        }
+    }
+}
+
+.icon {
+    color: $primary;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
